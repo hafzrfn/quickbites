@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Bites - Frozen & Ready Meals</title>
+    <link rel="icon" type="image/png" href="images/quickbitespng.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#header" class="logo" style="display:inline-block;">
+            <img src="images/quickbitespng.png" class="logonavbar" alt="Dine with Uswah Logo">
+        </a>
+        <div class="nav-right">
+            <div class="home-tab">
+                <a href="#header" style="text-decoration: none;">Home</a>
+            </div>
+            <!-- <div class="whatsnew-tab">
+                <a href="#whats-new" style="text-decoration: none;">What's New</a> 
+            </div>-->
+            <div class="product-tab">
+                <a href="#our-products" style="text-decoration: none;">Our Products</a>
+            </div>
+            <div class="aboutus-tab">
+                <a href="#testimonials" style="text-decoration: none;">Testimonials</a>
+            </div>
+            <div class="contactus-tab">
+                <a href="#about-us" style="text-decoration: none;">Who We Are</a>
+            </div>
+            <div class="ordernow-button">
+                <button>Order Now</button>
+            </div>
+        </div>
+        <!-- Hamburger icon (top right, visible on mobile) -->
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+<!-- Hamburger icon (visible on mobile) -->
+<div class="hamburger" id="hamburger" style="display:none;">
+    <i class="fas fa-bars"></i>
+</div>
+
+<!-- Mobile navigation sidebar -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+<div class="mobile-nav" id="mobileNav">
+    <span class="close-mobile-nav" id="closeMobileNav">&times;</span>
+    <a href="#header">Home</a>
+    <!-- <a href="#whats-new">What's New</a> -->
+    <a href="#our-products">Our Products</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#about-us">Who We Are</a>
+    <button class="btn" id="mobileOrderNow">Order Now</button>
+</div>
+
+    <header id="header" style="width:100%; padding:0; margin:0; border:none;">
+        <img src="images/quickbitesbanner.png" alt="Quick Bites Banner" style="width:100%; display:block; max-height:100vh; object-fit:cover;">
+    </header>
+
+    <div class="container">
+        <!-- <h1>Our Shop</h1>
+        <p class="intro">Quick Bites menghadirkan pilihan makanan beku dan siap saji dengan kualitas terbaik. Produk kami, mulai dari spaghetti hingga frozen food, dikemas secara higienis menggunakan bahan ramah lingkungan, sehingga aman untuk dikonsumsi sekaligus mendukung keberlanjutan. Nikmati makanan lezat yang praktis disajikan kapan saja, sesuai kebutuhan gaya hidup modern Anda.</p> -->
+
+        <!-- <h2 id="whats-new">What's New</h2>
+    <div class="whats-new-section">
+        <div class="update-card">
+            <div class="update-date">Sep 25, 2025</div>
+            <div class="update-title">Banana Pudding Mini Pan Launched!</div>
+            <div class="update-desc">Our new mini pan version of our signature banana pudding is now available. Perfect for sharing or solo treats!</div>
+        </div>
+        <div class="update-card">
+            <div class="update-date">Sep 1, 2025</div>
+            <div class="update-title">Introducing Banana Pudding Trays</div>
+            <div class="update-desc">Our first product onto the site. Enjoy the taste of our signature Banana Puddings!</div>
+        </div> -->
+        <!-- Add more updates as needed -->
+
+
+        <h2 id="our-products">Our Products</h2>
+        <div class="products">
+            <div class="product">
+                <div class="product-img">
+                    <img src="images/spaghettibolognese.jpg" class="bananapuddingimg">
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Spaghetti Bolognese</h3>
+                    <p class="product-desc">Spaghetti kenyal dengan saus bolognese khas Quick Bites yang kaya rasa, dimasak dengan daging cincang pilihan dan bumbu rempah yang gurih. Praktis dipanaskan, nikmat disajikan kapan saja.</p>
+                    <div class="product-price">Rp 15.000</div>
+                    <button class="btn view-details">View Details</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-img">
+                    <img src="images/stik keju.jpg" class="bananapuddingimg">
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Stik Keju</h3>
+                    <p class="product-desc">Camilan renyah dengan lapisan luar golden crispy dan isian keju lumer di dalam. Cocok untuk teman ngemil, bekal, atau sajian cepat saat kumpul keluarga. <br>
+                        </p>
+                    <div class="product-price">Rp 5.000</div>
+                    <button class="btn view-details">View Details</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-img">
+                    <img src="images/frozenkatsu.jpg" class="bananapuddingimg">
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Frozen Katsu</h3>
+                    <p class="product-desc">Potongan daging ayam premium dilapisi tepung roti renyah, dibekukan segar agar tetap gurih saat digoreng. Mudah disajikan dengan nasi hangat atau jadi topping favorit.</p>
+                    <div class="product-price">Rp 22.000</div>
+                    <button class="btn view-details">View Details</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-img">
+                    <img src="images/frozensosis.jpg" class="bananapuddingimg">
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Frozen Sosis</h3>
+                    <p class="product-desc">Sosis berkualitas tinggi dengan rasa gurih lezat, praktis untuk sarapan, bekal, atau olahan masakan lain. Tinggal panaskan, langsung siap dinikmati.</p>
+                    <div class="product-price">Rp 10.000</div>
+                    <button class="btn view-details">View Details</button>
+                </div>
+            </div>
+
+            <div class="product unavailable">
+                <div class="product-img">
+                    <i class="fas fa-cake"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">To be Announced</h3>
+                    <p class="product-desc">Lorem Ipsum</p>
+                    <div class="product-price">SGD -</div>
+                    <button class="btn view-details">View Details</button>
+                </div>
+            </div>
+
+            <div class="product unavailable">
+                <div class="product-img">
+                    <i class="fas fa-cake"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">To be Announced</h3>
+                    <p class="product-desc">Lorem Ipsum</p>
+                    <div class="product-price">SGD -</div>
+                    <button class="btn view-details">View Details</button>
+                </div>
+            </div>
+        </div>
+        <!--Testimonial Section-->
+            <section class="testimonials-section" id="testimonials" style="max-width: 2000px; margin: 4rem auto;">
+                <div class="section-header">
+                    <div class="section-subtitle">TESTIMONIALS</div>
+                    <h2 class="section-title">What Our Customers Say</h2>
+                </div>
+                
+                <div class="testimonials-container">
+                    <div class="testimonials-track">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card">
+                            <div class="bubble">
+                                <p class="testimonial-text">Makanan: Spaghetti <br> "enaaak. saos bolognese nya ga asem pas, tp krn gw suka lada mnrt gw ladanya kurang berasa (preferensi gw doang ituma)"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">C</div>
+                                <div class="author-details">
+                                    <div class="author-name"></div>
+                                    <div class="author-username">Customer</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card">
+                            <div class="bubble">
+                                <p class="testimonial-text">Makanan: Spaghetti <br> "Enakk, would rebuy bgl, banyak juga isinya."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">C</div>
+                                <div class="author-details">
+                                    <div class="author-name"></div>
+                                    <div class="author-username">Customer</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card">
+                            <div class="bubble">
+                                <p class="testimonial-text">Makanan: Spaghetti <br> "Rasa pas, porsi pas, harga mantap 😋😋🔥👊👊🙏"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">C</div>
+                                <div class="author-details">
+                                    <div class="author-name"></div>
+                                    <div class="author-username">Customer</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 4 -->
+                        <div class="testimonial-card">
+                            <div class="bubble">
+                                <p class="testimonial-text">Makanan: Spaghetti <br>"Mantap"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">C</div>
+                                <div class="author-details">
+                                    <div class="author-name"></div>
+                                    <div class="author-username">Customer</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Duplicate testimonials for seamless infinite scroll -->
+                         <div class="testimonial-card">
+                            <div class="bubble">
+                                <p class="testimonial-text">Makanan: Spaghetti <br> "enaaak. saos bolognese nya ga asem pas, tp krn gw suka lada mnrt gw ladanya kurang berasa (preferensi gw doang ituma)"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">C</div>
+                                <div class="author-details">
+                                    <div class="author-name"></div>
+                                    <div class="author-username">Customer</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card">
+                            <div class="bubble">
+                                <p class="testimonial-text">Makanan: Spaghetti <br> "Enakk, would rebuy bgl, banyak juga isinya."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">C</div>
+                                <div class="author-details">
+                                    <div class="author-name"></div>
+                                    <div class="author-username">Customer</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card">
+                            <div class="bubble">
+                                <p class="testimonial-text">Makanan: Spaghetti <br> "Rasa pas, porsi pas, harga mantap 😋😋🔥👊👊🙏"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">C</div>
+                                <div class="author-details">
+                                    <div class="author-name"></div>
+                                    <div class="author-username">Customer</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 4 -->
+                        <div class="testimonial-card">
+                            <div class="bubble">
+                                <p class="testimonial-text">Makanan: Spaghetti <br>"Mantap"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">C</div>
+                                <div class="author-details">
+                                    <div class="author-name"></div>
+                                    <div class="author-username">Customer</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+            </section>
+
+
+        <div class="about" id="about-us">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p style="text-align: center; margin: 0 auto; font-size: 20px; font-weight: 600;">
+                        Quick Bites menghadirkan pilihan makanan beku dan siap saji dengan kualitas terbaik. Produk kami, mulai dari spaghetti hingga frozen food, dikemas secara higienis menggunakan bahan ramah lingkungan, sehingga aman untuk dikonsumsi sekaligus mendukung keberlanjutan. Nikmati makanan lezat yang praktis disajikan kapan saja, sesuai kebutuhan gaya hidup modern Anda.
+                    </p>   
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="contact" id="contact-us">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Address</h3>
+                    <p>Kampus A UNJ, Jakarta Timur</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <h3>DM us on Instagram!</h3>
+                    <p>@quickbites115</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-tiktok"></i>
+                    <h3>TikTok</h3>
+                    <p>quickbites.id</p>
+                </div>
+                <!--<div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Hours</h3>
+                    <p>Mon-Sat: 9am-6pm<br>Sun: 10am-4pm</p>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+
+    <div id="orderModal" class="order-modal-overlay">
+        <div class="order-modal">
+            <span class="order-modal-close" id="orderModalClose">&times;</span>
+            <h2 style="text-align:center;">A step away from some quick bites</h2>
+            <p style="text-align:center; color:#a66b2e;">
+                Please note: This is an Order Request Form, not a confirmed order. Once you submit your request, we'll review it and confirm all the details within 24 hours on business days.<br> Service and delivery charges may apply.
+            </p>
+            <form id="orderForm" name="submit-to-google-sheet" style="margin-top:2rem;" action="https://api.web3forms.com/submit" method="POST">
+                <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+                    <div style="flex:1; min-width:180px;">
+                        <label>First Name *</label>
+                        <input type="text" name="firstName" required style="width:100%;">
+                    </div>
+                    <div style="flex:1; min-width:180px;">
+                        <label>Last Name *</label>
+                        <input type="text" name="lastName" required style="width:100%;">
+                    </div>
+                </div>
+                <label>Email *</label>
+                <input type="email" name="email" required style="width:100%;">
+                <label>Phone (WhatsApp) *</label>
+                <div style="display: flex; gap: 0.5rem; align-items: stretch;">
+                    <div style="display: flex; align-items: center; background: #fff; border: 2px solid #31749e; border-radius: 8px; padding: 0 0.7rem; min-width: 140px; max-width: 150px; height: 42px; box-shadow: 0 2px 6px rgba(49,116,158,0.2);">
+                        <span style="font-size: 1.1rem; margin-right: 4px; color: #31749e;">🌍</span>
+                        <select name="countryCode" required style="border: none; background: transparent; font-size: 1rem; outline: none; width: 100px; height: 100%; cursor: pointer; color: #31749e; font-weight: 600;">
+                            <option value="+62" selected>ID +62</option>
+                        </select>
+                    </div>
+                    <input type="tel" name="phone" required style="flex:1; font-size:1rem; padding:0.4rem; border-radius:8px; border:1px solid #d1bfa3; height:42px;" maxlength="15">
+                </div>
+                <label>Pick up or Delivery *</label>
+                <div style="display:flex; gap:2rem; align-items:center;">
+                    <div style="display:flex; align-items:center;">
+                        <input type="radio" name="pickupDelivery" value="pickup" id="pickupRadio" required>
+                        <label for="pickupRadio" style="margin-left:8px;">Pickup</label>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <input type="radio" name="pickupDelivery" value="delivery" id="deliveryRadio">
+                        <label for="deliveryRadio" style="margin-left:8px;">Delivery</label>
+                    </div>
+                </div>
+                <div style="margin: 0.5rem 0 1rem 0; color: #a66b2e; font-size: 1rem;">
+                    Delivery – Please note our minimum order value for delivery is Rp 30.000.
+                </div>
+                <div id="addressField" style="display:none;">
+                    <label>Address *</label>
+                    <input type="text" name="address" style="width:100%;">
+                </div>
+                <!-- UNJ Student or not Section -->
+                <label>Are you affiliated with UNJ? (Student, Professor etc) *</label>
+                <div style="display:flex; gap:2rem; align-items:center;">
+                    <div style="display:flex; align-items:center;">
+                        <input type="radio" name="wargaUNJ" value="yes" id="wargaUNJYes" required>
+                        <label for="wargaUNJYes" style="margin-left:8px;">Yes</label>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <input type="radio" name="wargaUNJ" value="no" id="wargaUNJNo">
+                        <label for="wargaUNJNo" style="margin-left:8px;">No</label>
+                    </div>
+                </div>
+                <label>Date / Time *</label>
+                <input type="datetime-local" name="datetime" required style="width:100%;">
+                <hr style="margin:2rem 0;">
+                <h3>Order Products</h3>
+                <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+                    <div style="flex:2; min-width:180px;">
+                        <label>Product *</label>
+                        <select name="product" id="cakeFlavor" required style="width:100%;">
+                            <option value="Spaghetti Bolognese">Spaghetti Bolognese</option>
+                            <option value="Stik Keju">Stik Keju</option>
+                            <option value="Frozen Katsu">Frozen Katsu</option>
+                            <option value="Frozen Sosis">Frozen Sosis</option>
+                        </select>
+                    </div>
+                    <div style="flex:1; min-width:120px;">
+                        <label>Quantity *</label>
+                        <input type="number" name="productQuantity" id="cakeQuantity" min="1" required style="width:100%;">
+                    </div>
+                </div>
+                <label>Comment or Message *</label>
+                <textarea name="comment" required style="width:100%;height:100px;"></textarea>
+                <button type="submit" class="btn" style="width:100%;margin-top:1rem;">Submit Order Request</button>
+                <div id="orderLoading" style="display:none; text-align:center; margin-bottom:1rem;">
+                    <span class="loader" style="display:inline-block; vertical-align:middle; margin-right:8px;">
+                        <svg width="22" height="22" viewBox="0 0 50 50">
+                            <circle cx="25" cy="25" r="20" fill="none" stroke="#31749e" stroke-width="5" stroke-linecap="round" stroke-dasharray="31.4 31.4" transform="rotate(-90 25 25)">
+                                <animateTransform attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="1s" repeatCount="indefinite"/>
+                            </circle>
+                        </svg>
+                    </span>
+                    <span style="font-size:1.1rem; color:#31749e;">Submitting order request...</span>
+                </div>
+                <p style="color:#a66b2e; margin-top:1rem;">
+                    By submitting this form, you acknowledge that this is an order request, not a confirmed order.
+                </p>
+                <input type="hidden" name="access_key" value="2ad2ce30-a789-4ad2-a901-9af0bf684145">
+            </form>
+        </div>
+    </div>
+
+    <div id="productDetailsModal" class="order-modal-overlay">
+        <div class="order-modal" style="max-width:1000px; display:flex; flex-direction:row; gap:2rem; align-items:center;">
+            <span class="order-modal-close" id="productDetailsClose" style="position:absolute;top:18px;right:18px;">&times;</span>
+            <div id="productDetailsImage" style="flex:1; min-width:300px;">
+                <!-- Image will be injected here -->
+            </div>
+            <div style="flex:1;">
+                <h2 id="productDetailsName" style="margin-top:0.5rem;"></h2>
+                <p id="productDetailsDesc" style="margin-bottom:1rem;"></p>
+                <div id="productDetailsPrice" style="font-weight:bold; color:#31749e; font-size:1.3rem; margin-bottom:2rem;"></div>
+                <button class="btn" id="productDetailsOrderBtn" style="width:auto;">Order Now</button>
+            </div>
+        </div>
+    </div>
+    
+</head>
+</html>
+
+    <footer>
+        <p>© 2025 Quick Bites website. All rights reserved.</p>
+        <!--<p>Follow us on 
+            <a href="#" style="color: #f8b5c1;"><i class="fab fa-instagram"></i></a> 
+            <a href="#" style="color: #f8b5c1;"><i class="fab fa-facebook"></i></a> 
+            <a href="#" style="color: #f8b5c1;"><i class="fab fa-twitter"></i></a>
+        </p>-->
+    </footer>
+</body>
+</html>
