@@ -19,10 +19,9 @@
         }
 
         body {
-            background-color: #f5f5f5;
+            background: linear-gradient(135deg, #f5fafd 0%, #f5f5f5 100%);
             color: var(--dark);
             line-height: 1.6;
-            /* padding-top: 50px; REMOVE THIS */
         }
 
         /* Navigation Bar */
@@ -31,8 +30,9 @@
             top: 0;
             left: 0;
             width: 100%;
-            background: #f5f5f5;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.85); /* semi-transparent white */
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+            backdrop-filter: blur(6px); /* blur effect */
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -562,6 +562,17 @@
     }
 }
 
+    .products, .about, .contact, .testimonials-section {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 4px 24px rgba(49,116,158,0.06);
+        padding: 2rem;
+        margin-bottom: 2.5rem;
+}
+    .products:nth-of-type(even), .about:nth-of-type(even) {
+        background: #f5fafd;
+}
+
 @media (max-width: 600px) {
     .order-modal {
         max-width: 98vw !important;
@@ -894,3 +905,5 @@
                 height: 50px;
             }
         }
+
+        
